@@ -1,45 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MotarenEv</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTAREN EV - Future of Electric Mobility</title>
+    <link rel="icon" type="image/x-icon" href="JustLogo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="JustLogo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="JustLogo.png">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <canvas id="bg-canvas"></canvas>
-  <nav class="navbar">
-    <div class="logo">MotarenEv</div>
-    <ul class="nav-links">
-      <li><a href="#home" class="nav-link active">Home</a></li>
-      <li><a href="#contact" class="nav-link">Contact Us</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section id="home" class="page home-page active">
-      <div class="hero">
-        <h1>Welcome to MotarenEv</h1>
-        <p>We are building the future of electric mobility.<br>Interested in joining our team? <span class="join-link" id="joinTeam">Let us know!</span></p>
-      </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="JustLogo.png" scale="0.5" alt="MOTAREN EV" class="logo-img">
+                <span class="logo-text">MOTAREN <span class="ev-text">EV</span></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <button class="join-btn" onclick="openPopup()">Join Our Team</button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="animated-ev-container">
+                <div class="ev-silhouette ev-1"></div>
+                <div class="ev-silhouette ev-2"></div>
+                <div class="ev-silhouette ev-3"></div>
+            </div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title animate-text" data-delay="0">
+                    <span class="title-line">MOTAREN</span>
+                    <span class="title-line ev-highlight">EV</span>
+                </h1>
+                <p class="hero-subtitle animate-text" data-delay="500">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="hero-stats animate-text" data-delay="1000">
+                    <div class="stat">
+                        <span class="stat-number">2025</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Team Members</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2027</span>
+                        <span class="stat-label">Target Launch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
     </section>
-    <section id="contact" class="page contact-page">
-      <form id="contactForm" class="contact-form">
-        <h2>Contact Us</h2>
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-        <div class="form-message" id="formMessage"></div>
-      </form>
+
+    <!-- Vision Section -->
+    <section class="vision-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-text">Future Vision</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="vision-content">
+                <div class="vision-text animate-text">
+                    <h3>Lorem Ipsum Dolor Sit Amet</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="vision-visual animate-text">
+                    <div class="scooter-container">
+                        <img src="just bike .png" alt="MOTAREN EV Electric Scooter" class="scooter-image">
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
-  <div class="modal" id="joinModal">
-    <div class="modal-content">
-      <span class="close-modal" id="closeModal">&times;</span>
-      <h2>Join Our Team</h2>
-      <p>We’re looking for passionate people! Email us at <a href="mailto:hello@MotarenEv.in">hello@MotarenEv.in</a> with your interest.</p>
+
+    <!-- Technology Section -->
+    <section class="tech-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-text">Our Focus Areas</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card animate-text">
+                    <div class="tech-icon">
+                        <div class="battery-icon"></div>
+                    </div>
+                    <h3>Research & Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. We are researching innovative solutions for electric mobility.</p>
+                </div>
+                <div class="tech-card animate-text">
+                    <div class="tech-icon">
+                        <div class="ai-icon"></div>
+                    </div>
+                    <h3>Design Innovation</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation. Our team focuses on creating user-centered design solutions.</p>
+                </div>
+                <div class="tech-card animate-text">
+                    <div class="tech-icon">
+                        <div class="charging-icon"></div>
+                    </div>
+                    <h3>Future Planning</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate. We are building partnerships for sustainable transportation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Team Section -->
+    <section class="join-section">
+        <div class="container">
+            <div class="join-content">
+                <h2 class="section-title animate-text">Join Our Mission</h2>
+                <p class="join-description animate-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+                <button class="cta-button animate-text" onclick="openPopup()">
+                    <span>Join Our Team</span>
+                    <div class="button-glow"></div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Popup -->
+    <div id="contactPopup" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3>Join MOTAREN EV Team</h3>
+                <button class="close-btn" onclick="closePopup()">&times;</button>
+            </div>
+            <div class="popup-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                <!-- Google Form embed -->
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfLuhheFaokF1CsYHXSOTgbjxQ-Es7O1Nhkp5pP20xx10rDgA/viewform?usp=sf_link&embedded=true" 
+                        width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">
+                    Loading...
+                </iframe>
+            </div>
+        </div>
     </div>
-  </div>
-  <script src="script.js"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="JustLogo.png" alt="MOTAREN EV" class="logo-img">
+                    <span class="logo-text">MOTAREN <span class="ev-text">EV</span></span>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 MOTAREN EV. All rights reserved. Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
